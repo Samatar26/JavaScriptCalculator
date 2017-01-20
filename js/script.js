@@ -3,6 +3,7 @@ var output = document.getElementById("output");
 var operator = document.getElementsByClassName("operator");
 var numbers = document.getElementsByClassName("numbers");
 var equals = document.getElementById("equals");
+var clear = document.getElementById("clear");
 var split;
 var a;
 var b;
@@ -72,9 +73,16 @@ function log() {
 
 }
 
+function empty() {
+    output.innerText = "";
+    split = "";
+}
 
 
-//Numbers
+//Numbers and operators evenlisteners
+
+clear.addEventListener("click", empty);
+
 for (var k=0; k<numbers.length; k++){
 numbers[k].addEventListener("click", test)
 }
