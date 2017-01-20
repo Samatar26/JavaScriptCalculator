@@ -9,12 +9,13 @@ body {
 #wrapper {
   width: 30em;
   min-width: 20em;
-  height: 400px;
+  height: 450px;
   margin: 5% auto;
   background: #4f5e77;
   border-radius: 10px;
   overflow: auto;
   font-family: "Lato";
+  box-shadow: 0 0 20px black;
 }
 
 #heading {
@@ -23,23 +24,31 @@ body {
     font-family: "Lato";
 }
 
-p {
+#output {
     background: #6f8bb7;
     width: 90%;
-    font-size: 30px;
+    height:50px;
+    font-size: 2.5em;
     border-radius: 5px;
-    margin: 0.4em auto;
+    margin: 0.6em auto;
+    box-shadow: 0 0 5px;
 }
 
-input {
-    width: 5em;
-    height: 4.9em;
+button {
+    width:  70px;
+    height: 70px;
     border-radius: 5px;
-    font-size: 1em;
-    font-weight: bold;
-    margin-left: 1.8em;
-    margin-bottom: 0.4em;
-    box-shadow: 1px 2px;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-left: 1.6em;
+    margin-bottom: 0.6em;
+    box-shadow: 0 0 5px;
+    font-family: "lato";
+
 }
 
-#decimal {}
+
+
+#equals {
+  background-color: #ce7f2f;
+}

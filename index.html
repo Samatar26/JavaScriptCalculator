@@ -5,6 +5,7 @@
 <meta name="description" content="FreeCodeCamp JavaScript Calculator Project"/>
 <meta name="keywords" content="FCC, FreeCodeCamp, JavaScript, Calculator, Project"/>
 <link rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="js/script.js"></script>
 <link rel="icon" href="assets/calculator.png">
 
 <title>JavaScript Calculator</title>
@@ -16,23 +17,24 @@
 <h1 id="heading">JavaScript Calculator</h1>
 <div id="wrapper">
 
-  <p>0 + 1 / 3 * 4 + 3</p>
-  <input type="button" name="seven" value="7" />
-  <input type="button" name="eight" value="8" />
-  <input type="button" name="nine" value="9" />
-  <input type="button" name="divide" value="÷" />
-  <input type="button" name="four" value="4" />
-  <input type="button" name="five" value="5" />
-  <input type="button" name="six" value="6" />
-  <input type="button" name="times" value="x" />
-  <input type="button" name="one" value="1" />
-  <input type="button" name="two" value="2" />
-  <input type="button" name="three" value="3" />
-  <input type="button" name="minus" value="-" />
-  <input type="button" name="zero" value="0" />
-  <input type="button" name="decimal" value="." />
-  <input type="button" name="plus" value="+" />
-  <input type="button" name="equals" value="=" />
+  <p id="output"></p>
+  <button class="numbers" type="button"  value="7">7</button>
+  <button class="numbers" type="button"  value="8">8</button>
+  <button class="numbers" type="button"  value="9">9</button>
+  <button class="operator" type="button"  value="÷" >÷</button>
+  <button class="numbers" type="button"  value="4" >4</button>
+  <button class="numbers" type="button"  value="5" >5</button>
+  <button class="numbers" type="button"  value="6">6</button>
+  <button class="operator"type="button"  value="x">x</button>
+  <button class="numbers" type="button"  value="1">1</button>
+  <button class="numbers" type="button"  value="2">2</button>
+  <button class="numbers" type="button"  value="3">3</button>
+  <button class="operator" type="button"  value="-">-</button>
+  <button class="numbers" type="button"  value="0">0</button>
+
+  <button class="operator"type="button"  value="+">+</button>
+  <button id="decimal" type="button" name="decimal" value=".">C</button>
+  <button id="equals" type="button" name="equals" value="=">=</button>
 
 
 </div>
