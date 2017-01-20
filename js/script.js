@@ -31,7 +31,7 @@ function sum() {
 
       if (split[i]==="x") {
           var math= split[i-1]*split[i+1];
-          split.splice((i-1), (i+2), math);
+          split.splice((i-1), (3), math);
           i=0;
           console.log(split);
 
@@ -43,12 +43,12 @@ function sum() {
             split.splice((i-1), (i+2), math);
             i=0;
           }
-        if (split[i]==="+" && !split.join("").match("x")) {
+        if (split[i]==="+" && !split.join("").match("x") && !split.join("").match("÷")) {
               var math= split[i-1]+split[i+1];
               split.splice((i-1), (i+2), math);
               i=0;
             }
-         if (split[i]==="-") {
+         if (split[i]==="-" && !split.join("").match("x") && !split.join("").match("÷")) {
                 var math= split[i-1]-split[i+1];
                 split.splice((i-1), (i+2), math);
                 i=0;
