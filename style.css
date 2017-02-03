@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Overpass+Mono|Pacifico');
 
 body {
-    background-color: #547cbc;
+    background-color: white;
 }
 
 
@@ -11,7 +11,7 @@ body {
   min-width: 20em;
   height: 450px;
   margin: 5% auto;
-  background: #4f5e77;
+  background: black;
   border-radius: 10px;
   overflow: auto;
   font-family: "Lato";
@@ -26,7 +26,7 @@ body {
 }
 
 #output {
-    background: #6f8bb7;
+    background: white;
     width: 90%;
     height:50px;
     font-size: 2.5em;
