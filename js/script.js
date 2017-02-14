@@ -20,8 +20,8 @@ function test() {
 }
 
 function operation() {
-
-    if(output.innerText!=="" && parseInt(output.innerText[(output.innerText.length-1)])) {
+    console.log(output.innerText);
+    if(output.innerText!=="" && !isNaN(parseInt(output.innerText[(output.innerText.length-1)]))) {
       output.innerText+= " " + event.target.value + " ";
     }
     if(!parseInt(output.innerText[(output.innerText.length-1)])){
