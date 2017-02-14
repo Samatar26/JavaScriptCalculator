@@ -62,23 +62,28 @@ function sum() {
               }
 
       }
-      console.log(split);
 
       return output.innerText=math;
 }
 
 
 function log() {
+
+
+    console.log(output.innerText.length);
     split = (output.innerText).split(" ");
+    console.log(split.length);
+    if(split.length%2!==0&&split.length>1){
     for (var j=0; j<=split.length; j+=2) {
         split[j]=parseInt(split[j]);
     }
-    console.log(split);
+
+
+
     return sum();
 
-
 }
-
+  }
 function empty() {
     output.innerText = "";
     split = "";
